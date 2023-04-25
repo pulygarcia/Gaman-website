@@ -322,8 +322,8 @@ html {
     }
   }
   .nosotros__image-wrapper {
-    border-top-right-radius: 10rem;
-    border-bottom-right-radius: 10rem;
+    border-top-right-radius: 28rem;
+    border-bottom-right-radius: 28rem;
     overflow: hidden;
   }
   .nosotros__content {
