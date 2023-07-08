@@ -16,8 +16,8 @@
     
                 <nav class="header__nav">
                     <a href="#categories" class="header__enlace zoomInUp">Productos</a>
-                    <a href="#speciality" class="header__enlace zoomInUp">Sobre nosotros</a>
-                    <a href="#nosotros" class="header__enlace zoomInUp">¿Como trabajamos?</a>
+                    <a href="#speciality" class="header__enlace zoomInUp">Nosotros</a>
+                    <a href="#contacto" class="header__enlace zoomInUp">Contacto</a>
                 </nav>
             </div>
 
@@ -106,35 +106,35 @@
     </section>
 
     <section class="caracteristicas container">
-        <div class="caracteristica">
+        <div class="caracteristica hidden">
             <div>⭐</div>
             <p class="caracteristica__titulo">Productos de alta calidad</p>
             <p>Nuestros productos están construídos con materiales de larga duración y la mejor calidad.</p>
         </div>
-        <div class="caracteristica">
+        <div class="caracteristica hidden">
             <div>🍖</div>
             <p class="caracteristica__titulo">Degustá gratis</p>
             <p>Coordiná una degustación GRATIS y conocé nuestros productos.</p>
         </div>
-        <div class="caracteristica">
+        <div class="caracteristica hidden">
             <div>✅</div>
             <p class="caracteristica__titulo">Garantía</p>
             <p>Productos con una extensa garantía.</p>
         </div>
-        <div class="caracteristica">
+        <div class="caracteristica hidden">
             <div>🍃</div>
             <p class="caracteristica__titulo">Salud</p>
             <p>Cociná sin perder los nutrientes de los alimentos.</p>
         </div>
-        <div class="caracteristica">
-            <div>🍃</div>
-            <p class="caracteristica__titulo">Salud</p>
-            <p>Cociná sin perder los nutrientes de los alimentos.</p>
+        <div class="caracteristica hidden">
+            <div>🌎</div>
+            <p class="caracteristica__titulo">Alcance</p>
+            <p>También estamos en tu provincia! Contactá con nosotros.</p>
         </div>
-        <div class="caracteristica">
-            <div>🍃</div>
-            <p class="caracteristica__titulo">Salud</p>
-            <p>Cociná sin perder los nutrientes de los alimentos.</p>
+        <div class="caracteristica hidden">
+            <div>📞</div>
+            <p class="caracteristica__titulo">Soporte</p>
+            <p>¿Alguna duda? Tendrás un número para consultas todos los días.</p>
         </div>
     </section>
 
@@ -142,7 +142,7 @@
         <h2 class="nosotros__heading hidden">¿Cómo trabajamos?</h2>
         <div class="nosotros__grid">  
             <div class="nosotros__image-wrapper">
-                <img class="nosotros__image hidden" src="img/PAELLERA.jpg" alt="pizzeria">
+                <img class="nosotros__image hidden" src="img/salmon-g5ba818ddb_1280.jpg" alt="comida">
             </div>
 
             <div class="nosotros__content">
@@ -158,51 +158,54 @@
     </div>
 </section>
 
-<section class="galeria hidden">
-    <img src="img/bizcocho.jpeg" alt="bizcochuelo">
-    <img src="img/WhatsApp Image 2023-04-23 at 23.29.53.jpeg" alt="productos">
-</section>
+<div class="form-container hidden" id="contacto">
+	<p class="title">Contactanos</p>
+	<form class="form">
+		<div class="input-group">
+			<label for="email">Email</label>
+			<input type="email" id="email" placeholder="Correo electrónico">
+		</div>
+		<div class="input-group">
+			<label for="mensaje">Mensaje</label>
+			<input type="text" name="password" id="mensaje" placeholder="Dejanos un mensaje o consulta">
+		</div>
+		<button class="sign">Enviar</button>
+	</form>
+	<div class="social-message">
+		<div class="line"></div>
+		<p class="message">Encontranos en redes</p>
+		<div class="line"></div>
+	</div>
+	<div class="social-icons">
+		<a href="https://wa.me/3865305475?text=Hola me comunico desde el sitio web">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#751fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+              </svg>
+        </a>
+		
+		<a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#751fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+              </svg>
+        </a>
 
-
-<section class="local container">
-    <div class="local__information">
-        <div class="local__item">
-            <h3 class="local__info hidden">Horarios</h3>
-            <p class="local__data hidden">Consultar vía whatsapp <a href="https://wa.me/3865305475?text=Hola me comunico desde el sitio web" target="_blank">3865305475</p>
-        </div>
-
-        <div class="local__item">
-            <h3 class="local__info hidden">Encontranos en estas redes</h3>
-            <div class="local__redes">
-                <a href="https://wa.me/3865305475?text=Hola me comunico desde el sitio web">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#751fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
-                        <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
-                      </svg>
-                </a>
-                <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#751fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-                      </svg>
-                </a>
-                <a href="https://www.instagram.com/gamangroup/">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#751fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <rect x="4" y="4" width="16" height="16" rx="4" />
-                        <circle cx="12" cy="12" r="3" />
-                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
-                      </svg>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
+        <a href="https://www.instagram.com/gamangroup/">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#751fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <rect x="4" y="4" width="16" height="16" rx="4" />
+                <circle cx="12" cy="12" r="3" />
+                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+              </svg>
+        </a>
+	</div>
+</div>
 
 
 <footer class="footer">
-    <p>Creado por Puly g.  <span>Frontend dev.&copy;</span></p>
+    <p>Creado por Puly.  <span>Frontend dev.&copy;</span></p>
     <a href="https://www.instagram.com/puly___garcia/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff2825" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
         <rect x="4" y="4" width="16" height="16" rx="4" />
