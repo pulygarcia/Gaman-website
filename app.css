@@ -133,7 +133,7 @@ html {
   .header__content {
     margin: 0 auto;
   }
-  .header__content img{
+  .header__content .icono{
     width: 8rem;
     margin: 0 auto;
   }
