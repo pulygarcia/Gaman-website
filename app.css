@@ -12,7 +12,7 @@ html {
     font-family: "Roboto", sans-serif;
     font-size: 1.6rem;
     margin: 0;
-    background-color: #f3f3f3;
+    background-image: linear-gradient(to right, rgb(243, 244, 246), rgb(209, 213, 219));
   }
   
   a {
@@ -29,12 +29,17 @@ html {
     margin: 0 auto;
     width: 95%;
   }
+
+  .hidden{
+    opacity: 1;
+  }
   
   .header {
     padding: 4rem 0;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(img/hoyas-cat.jpeg);
+    background-image: linear-gradient(to right, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0));
     background-size: cover;
     background-position: center;
+    height: 100vh;
   }
   .header__barra {
     display: flex;
@@ -42,6 +47,9 @@ html {
     align-items: center;
   }
   @media (min-width: 756px) {
+    .header{
+      height: auto;
+    }
     .header__barra {
       flex-direction: row;
       justify-content: space-between;
@@ -50,9 +58,8 @@ html {
   .header__logo {
     max-width: 15rem;
     border-radius: 50%;
-    animation-name: rotador;
-    animation-duration: 3s;
-    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-delay: 0s;
   }
 
   @keyframes rotador {
@@ -64,6 +71,48 @@ html {
       transform: rotate(0deg);
     }
   }
+
+  /*ANIMACION*/
+  .zoomInUp {
+    -webkit-animation-name: zoomInUp;
+    animation-name: zoomInUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes zoomInUp {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+    transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+    60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+    transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+    }
+    @keyframes zoomInUp {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+    transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+    60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+    transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+    } 
 
   .header__nav {
     display: flex;
@@ -123,6 +172,7 @@ html {
     right: 1.5rem;
     bottom: 7rem;
     position: fixed;
+    z-index: 10;
   }
   @media (min-width: 756px) {
     .header__whatsapp {
@@ -185,6 +235,7 @@ html {
     background-color: #fff;
     border-radius: 1rem;
     margin-bottom: 2rem;
+    box-shadow: #aca9b1 8px 8px 4px 0px;
   }
   @media (min-width: 756px) {
     .categorie {
@@ -284,6 +335,40 @@ html {
   }
   .speciality__button:hover {
     background-color: #121182;
+  }
+
+  .caracteristicas{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+  @media (min-width: 768px){
+      .caracteristicas{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+      }
+  }
+
+  .caracteristica{
+    background-color: #fff;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);;
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+  .caracteristica div{
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+  }
+  .caracteristica__titulo{
+    font-size: 2rem;
+    color: #2a364b;
+    font-weight: 700;
   }
   
   .nosotros {

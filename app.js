@@ -12,7 +12,7 @@ function fade(){
         const rect = elemento.getBoundingClientRect();
         if(rect.y <= 1005.53125){
             elemento.classList.remove('hidden');
-            elemento.classList.add('fadeInUp');
+            elemento.classList.add('zoomInUp');
         }
     })
 }
