@@ -133,6 +133,10 @@ html {
   .header__content {
     margin: 0 auto;
   }
+  .header__content img{
+    width: 8rem;
+    margin: 0 auto;
+  }
   @media (min-width: 756px) {
     .header__content {
       width: 50%;
