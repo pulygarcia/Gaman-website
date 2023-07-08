@@ -385,24 +385,18 @@ html {
   @media (min-width: 756px) {
     .nosotros__grid {
       display: grid;
-      gap: 4rem;
       margin-top: 8rem;
     }
   }
   @media (min-width: 756px) and (min-width: 756px) {
     .nosotros__grid {
       grid-template-columns: repeat(2, 1fr);
-      align-items: center;
     }
-  }
-  .nosotros__image-wrapper {
-    border-top-right-radius: 10rem;
-    border-bottom-right-radius: 10rem;
-    overflow: hidden;
   }
   .nosotros__content {
     padding: 2rem;
     color: #fff;
+    background-image: linear-gradient(to right, #131128 0%, #1a1d24 80%);
   }
   .nosotros__title {
     text-align: center;
