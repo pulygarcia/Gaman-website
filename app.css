@@ -143,6 +143,9 @@ html {
       margin: 0;
       padding-bottom: 4rem;
     }
+    .header__content .icono{
+      display: none;
+    }
   }
   .header__heading {
     margin-bottom: 0;
